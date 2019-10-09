@@ -1,0 +1,140 @@
+---
+title: Adelmo Filho's Resume"
+author: Adelmo Filho
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- TRUE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+
+# First let's get the data, filtering to only the items tagged as
+# Resume items
+position_data <- read_csv('positions.csv') %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      TRUE ~ section
+    )
+  ) 
+
+```
+
+
+Aside
+================================================================================
+
+
+![logo](foto.jpg){width=100%}
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> adelmo.aguiar.filho@gmail.com
+- <i class="fa fa-github"></i> github.com/adelmofilho
+- <i class="fas fa-globe"></i> blog.adelmofilho.com
+- <i class="fa fa-phone"></i> +55 11 9-6447-4233
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+Highly experienced in
+
+- <i class="fab fa-r-project"></i> R
+- <i class="fas fa-code-branch"></i> Git
+- <i class="fas fa-database"></i> SQL
+- <i class="fab fa-python"></i> Python
+
+Experience with
+
+- <i class="fab fa-docker"></i> Docker
+- <i class="fab fa-aws"></i> AWS
+- <i class="fas fa-server"></i> Apache Spark
+- <i class="fas fa-laptop"></i> Apache Hadoop
+
+
+Idioms {#idiomas}
+--------------------------------------------------------------------------------
+
+- Brazilian Portuguese
+- English
+- German
+
+
+Open Source Contributions {#open-source}
+--------------------------------------------------------------------------------
+
+All projects available at `github.com/adelmofilho`
+
+
+- `tenispolaR`: R package to gather historical encryption techniques
+
+- `kRypto`: R package to pull cryptocurrency data
+
+
+Main
+================================================================================
+
+Adelmo Filho {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+intro_text <- "Data Scientist with 1+ years of experience developing data-driven solutions on financial market. Experienced at creating statistical and machine learning models. Passionated about data engineering frameworks and visualization tools."
+
+
+cat(sanitize_links(intro_text))
+```
+
+<br>
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
+```
+
+<br>
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+<br>
+
+Personal Projects {data-icon=newspaper}
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('writings')
+```
+
+
