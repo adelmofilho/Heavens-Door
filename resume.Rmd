@@ -103,7 +103,7 @@ Adelmo Filho {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "Data Scientist with 1+ years of experience developing data-driven solutions on financial market. Experienced at creating statistical and machine learning models. Passionated about data engineering frameworks and visualization tools."
+intro_text <- "Data Scientist with experience developing data-driven solutions on financial market. Experienced at creating statistical and machine learning models and is passionate about machine learning engineering frameworks and visualization tools."
 
 
 cat(sanitize_links(intro_text))
