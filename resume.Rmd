@@ -5,9 +5,7 @@ date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     css: ['css/custom_resume.css', 'css/styles.css', 'resume']
-    # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-
 ---
 
 
@@ -66,13 +64,14 @@ Highly experienced in
 
 - <i class="fab fa-r-project"></i> R
 - <i class="fas fa-code-branch"></i> Git
-- <i class="fas fa-database"></i> SQL
 - <i class="fab fa-python"></i> Python
+- <i class="fas fa-database"></i> SQL
+
 
 Experience with
 
-- <i class="fab fa-docker"></i> Docker
 - <i class="fab fa-aws"></i> AWS
+- <i class="fab fa-docker"></i> Docker
 - <i class="fas fa-server"></i> Apache Spark
 - <i class="fas fa-laptop"></i> Apache Hadoop
 
@@ -85,15 +84,10 @@ Idioms {#idiomas}
 - German
 
 
-Open Source Contributions {#open-source}
+Certificates {#open-source}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/adelmofilho`
-
-
-- `tenispolaR`: R package to gather historical encryption techniques
-
-- `kRypto`: R package to pull cryptocurrency data
+- `AWS Certified Cloud Practitioner` (2020)
 
 
 Main

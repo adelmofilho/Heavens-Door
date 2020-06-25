@@ -1,8 +1,8 @@
 section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
 education,TRUE,"Founder",GAMMA Research Group - Federal University of Bahia,"Salvador, BA - Brazil",2014,current,Technical advisor,Research contributor
 education,TRUE,"B.S., Chemical Engineering",Federal University of Bahia,"Salvador, BA - Brazil",2012,2018,Exchange student at Karlsruhe Institute of Technology (Germany),NA
-industry_positions,TRUE,Mid-level Data Scientist,Itaú Unibanco Holding S.A.,"São Paulo, SP - Brazil",2018,current,Data science generalist,Data engineering initiatives,NA
-industry_positions,TRUE,Founder + R Shiny Developer,LLAB Startup,"Salvador, BA- Brazil",2016,2018,R full stack developer,NA
-data_science_writings,TRUE,Girls on Data,Project aimed to teach data science principles to school girls in low-income families,N/A,2019,current,Support as Technical Advisor,twitter: @girlsondata,NA
-data_science_writings,TRUE,A2TW,Prediction of Motor Vehicle Theft at city of Salvador,N/A,2018,current,Time series modelling of Motor Vehicle Theft events considering city demography and weather forecasting,NA,NA
+industry_positions,TRUE,Senior Data Scientist,Itaú Unibanco Holding S.A.,"São Paulo, SP - Brazil",2020,current,AWS cloud plataform developer,MLOps initiatives,NA
+industry_positions,TRUE,Data Scientist,Itaú Unibanco Holding S.A.,"São Paulo, SP - Brazil",2018,2020,Data science generalist,Data engineering initiatives,NA
+industry_positions,TRUE,Founder,LLAB Startup,"Salvador, BA- Brazil",2016,2018,R developer,NA
+data_science_writings,TRUE,Girls on Data,Project aimed to teach data science to school girls in low-income families,N/A,2019,current,Support as Technical Advisor,twitter: @girlsondata,NA
 data_science_writings,TRUE,Timedrops,Development of residential water end use disaggregation tool through machine learning methods,N/A,2016,2018,Winner of Federal University of Bahia´s best research project awards at engineering field - 2017,NA,NA
